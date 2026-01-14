@@ -1,2 +1,5 @@
-# ai_agents
-AI Agents
+# AI Agents
+Philosophy
+- Lightweight
+- One agent
+- One function
