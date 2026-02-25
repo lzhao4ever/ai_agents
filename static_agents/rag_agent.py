@@ -75,12 +75,12 @@ def main(argv):
     else:
         agent = rag(args.model, args.db)
         while True:
-	    query = input("\nAsk a question (or type 'exit'): ")
-	    if query.lower() == 'exit': break
+            query = input("\nAsk a question (or type 'exit'): ")
+            if query.lower() == 'exit': break
 
-	    print("Thinking...")
-	    response = agent.invoke(query)
-	    print(f"\nAnswer: {response['result']}")
+            print("Thinking...")
+            response = agent.invoke(query)
+            print(f"\nAnswer: {response['result']}")
 
 if __name__ == "__main__":
     main(sys.argv[1:])
