@@ -74,7 +74,7 @@ def main(argv):
         return
     else:
         agent = rag(args.model, args.db)
-	while True:
+        while True:
 	    query = input("\nAsk a question (or type 'exit'): ")
 	    if query.lower() == 'exit': break
 
