@@ -21,7 +21,7 @@ def rag(model_name, db_path):
     )
     
     # vector db
-    vector_db = Chroma.from_documents(
+    vector_db = Chroma(
         persist_directory=db_path,
         embedding_function=embeddings
     )
